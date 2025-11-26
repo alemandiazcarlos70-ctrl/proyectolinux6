@@ -5,7 +5,7 @@
   <title>Florerito en GitHub Pages</title>
   <style>
     body {
-      background-color: black; /* Fondo inicial negro */
+      background-color: black;
       margin: 0;
       height: 100vh;
       display: flex;
@@ -37,7 +37,6 @@
   </div>
 
   <script>
-    // Imagen de rosa florecida
     const rosaFlorecida = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Rose_flower.jpg/120px-Rose_flower.jpg";
     const rosas = document.querySelectorAll(".rosa");
 
@@ -47,8 +46,6 @@
           rosa.src = rosaFlorecida;
           rosa.dataset.florecida = "true";
         }
-
-        // Verificar si todas florecieron
         const todasFlorecidas = Array.from(rosas).every(r => r.dataset.florecida === "true");
         if (todasFlorecidas) {
           document.body.style.backgroundColor = "skyblue";
